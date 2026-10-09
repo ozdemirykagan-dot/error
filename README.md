@@ -1,2 +1,1 @@
-# error
-error
+Bu bir şaka dosyasıdır türkler içindir
